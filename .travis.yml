@@ -2,7 +2,4 @@ language: go
 go: 1.4.1
 install: go get -t -v ./...
 before_install:
- - cat /etc/debian_version
- - sudo apt-get update -qq
- - sudo apt-get install -qq librdf0-dev
- - sudo dpkg -P librdf0-dev librasqal3-dev libraptor2-dev
+ - sudo make sudo
